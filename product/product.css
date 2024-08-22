@@ -1,0 +1,1170 @@
+:root{
+    --gray-color: #F2F0F1;
+    --black-color: #000000;
+    --light-color: #ffffff;
+    --dark-color: #616060;
+    --yellow-color:#FFC633;
+
+
+
+}
+*{
+    
+    box-sizing: border-box;
+
+
+}
+body{
+    background:white;
+    height: 100vh;
+    width: 1440px;
+    margin: 0;
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 1440px;
+    height: 100vh;
+}
+header .bar{
+    background: #000000;
+    width: 1440px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .bar h2{
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto;
+    color: var(--light-color);
+}
+header .bar a{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-color);
+}
+header .bar img{
+    margin: 10px 100px 10px 0;
+}
+header .mobile-nav{
+    display: none;
+}
+header nav{
+    width: 1440px;
+    height: 48px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav .logo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+
+}
+header nav .titles, header nav .vectors{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+header nav .titles li a{
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--dark-color);
+
+}
+header nav input{
+    width: 577px;
+    height: 48px;
+    padding: 12px 16px;
+    gap: 12px;
+    border-radius: 62px;
+    border: none;
+    background-color: var(--gray-color);
+}
+header nav input .search-icon::before{
+    content: url("../home/home-images/search.svg")
+}
+.large-line{
+    width: 1240px;
+    border: 1px solid var(--gray-color);
+    margin-top: 15px;
+
+}
+section{
+    width: 1440px;
+    margin-top: 158px;
+}  
+.single-product .arrows{
+    display: flex;
+    justify-content: space-around; 
+    width: 259px;
+    height: 22px;
+    top: 158px;
+    left: 100px;
+    gap: 12px;
+    list-style: none;
+    margin-left:40px;
+
+}
+.single-product .arrows li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+}
+.single-product .hero-sec{
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+}
+.single-product .hero-sec .left{
+    width: 600px;
+    height: 530px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0 -60px 0 0;
+}
+.single-product .hero-sec .left .left-left{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.single-product .hero-sec .left .left-left img{
+    width: 152px;
+}
+.single-product .hero-sec .right{
+    width: 600px;
+    height: 530px;
+}
+.single-product .hero-sec .right .rating .title{
+    font-family: Oswald, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    width: 600px;
+    height: 48px;
+}
+.single-product .hero-sec .right .rating .stars{
+    list-style: none;
+    display: flex;
+    margin: 0 0 0 -40px;
+
+}
+.single-product .hero-sec .right .rating .stars .star{
+    width: 24.71px;
+    height: 24.71px;
+    margin: 1px;
+}
+.single-product .hero-sec .right .rating .stars .frac{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: left;
+        
+    
+}
+.single-product .hero-sec .right .rating .try, .also-liked .T-shirt-card .try{
+    width: 205px;
+    height: 32px;
+    display: flex;
+    gap: 10px;
+
+}
+.single-product .hero-sec .right .rating h1, .also-liked .T-shirt-card h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+    font-family: "Barlow Condensed", sans-serif; 
+}
+.single-product .hero-sec .right .rating h1 .instead, .also-liked .T-shirt-card .instead{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+    text-decoration: line-through;
+    color: #c7c7c7;
+    margin: 5px 0 0 5px;
+}
+.single-product .hero-sec .right .rating h1 .discount, .also-liked .T-shirt-card .discount{
+    background: #ffebeb;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    width: 62px;
+    height: 28px;
+    padding: 6px 12px;
+    border-radius: 62px;
+    margin: -20px 0 -10px 5px;
+    color: #ff4a4a;
+}
+.single-product .hero-sec .right .rating p{
+    font-family: "Barlow Condensed", sans-serif;
+    width: 358px;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 30px 0 10px 0;
+    color: var(--dark-color);
+}
+.line{
+    width: 590px;
+    margin: auto;
+    border: 1px solid var(--gray-color);
+}
+.single-product .hero-sec .right .sub-title{
+    width: 93px;
+    height: 11px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--dark-color);
+}
+.single-product .hero-sec .right ul{
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    width: 143px;
+    height: 37px;
+    gap: 16px;
+    margin: 20px 0 20px -40px;
+}
+.single-product .hero-sec .right ul li .dark{
+    background: var(--black-color);
+    color: var(--light-color);
+}
+.single-product .hero-sec .right ul li button{
+    width: 86px;
+    height: 40px;
+    padding: 7px 24px;
+    border-radius: 62px;
+    border: none;
+    background: var(--gray-color);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: center;
+}
+.single-product .hero-sec .right .add-subtract{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+.single-product .hero-sec .right .add-subtract button{
+    margin: 10px 0px;
+    width: 170px;
+    height: 40px;
+    top: 694px;
+    left: 750px;
+    padding: 16px 20px;
+    border-radius: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gray-color);
+    border: none;
+}
+.single-product .hero-sec .right .add-subtract a{
+    width: 400px;
+    height: 40px;
+    top: 694px;
+    left: 940px;
+    margin: 10px;
+    padding: 10px 53px;
+    gap: 12px;
+    border-radius: 62px;
+    background: var(--black-color);
+    text-decoration: none;
+    text-align: center;
+    color: var(--light-color);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.6px;
+
+}
+.single-product .wrapper .tabs ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 80px 120px 5px 50px;
+
+}
+.single-product .wrapper .tabs .large-line{
+    width: 1280px;
+    border: 1px solid var(--gray-color);
+}
+.single-product .wrapper .tabs ul li{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: var(--dark-color);
+}
+.single-product .wrapper .tabs ul .active-tab{
+    color: var(--black-color);
+    font-weight: 500;
+}
+.single-product .wrapper .all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px;
+}
+.single-product .wrapper .all .review h1{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+
+}
+.single-product .wrapper .all .review h1 span{
+    width: 33px;
+    height: 11px;
+    top: 910px;
+    left: 233px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: var(--dark-color);
+}
+.single-product .wrapper .all .settings ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 354px;
+    height: 48px;
+    gap: 10px;
+
+
+}
+.single-product .wrapper .all .settings ul a{
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.single-product .wrapper .all .settings ul .set{
+    background: var(--gray-color);
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+.single-product .wrapper .all .settings ul .img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.single-product .wrapper .all .settings ul .two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gray-color);
+    width: 120px;
+    height: 48px;
+    padding: 16px 20px;;
+    border-radius: 62px;
+
+}
+.single-product .wrapper .all .settings ul .write{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black-color);
+    width: 166px;
+    height: 48px;
+    padding: 16px 20px;
+    border-radius: 62px;
+
+}
+.single-product .wrapper .all .settings ul .write a{
+    color: var(--light-color);
+}
+.single-product .wrapper .reviews{
+    width: 1280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: 0 80px;
+}
+.single-product .wrapper .reviews ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+.single-product .wrapper .reviews .user-review{
+    width: 610px;
+    height: 241.58px;
+    padding: 28px 32px;
+    border-radius: 20px;
+    border: 1px solid var(--gray-color);
+    font-family: "Barlow Condensed", sans-serif;
+    color: var(--dark-color);
+    text-align: left;
+}
+.single-product .wrapper .reviews .user-review p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+.single-product .wrapper .reviews .user-review h1{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+}
+.single-product .wrapper .reviews .user-review .star{
+    display: flex;
+    justify-content: space-between;
+}
+.single-product .wrapper .reviews .user-review .stars{
+    margin: 0 0 0 -40px;
+}
+.single-product .wrapper .reviews .user-review ul .name{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    margin: 0 5px 0 -40px;
+    color: var(--black-color);
+
+}
+.single-product .wrapper .load{
+    margin: 40px auto;
+    width: 230px;
+    height: 52px;
+    padding: 14px 40px 14px 70px;
+    border-radius: 62px;
+    border: 1px solid var(--gray-color);
+
+}
+.single-product .wrapper .load a{
+    text-decoration: none;
+    font-family:"Barlow Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    width: 140px;
+    height: 22px;
+    text-align: center;
+    color: var(--black-color);
+}
+.single-product .also-liked{
+    width: 1440px;
+    font-family:"Barlow Condensed", sans-serif;
+}
+.single-product .also-liked .title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: center;
+}
+.single-product .also-liked .T-shirt-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1240px;
+    margin: auto 100px 140px 50px;
+}
+.single-product .also-liked .T-shirt-cards ul{
+    list-style: none;
+    
+}
+.single-product .also-liked .T-shirt-cards .T-shirt-card{
+    width: 295px;
+}
+.single-product .also-liked .T-shirt-cards .stars{
+    display: flex;
+    margin: 0 0 0 -40px;
+}
+.single-product .also-liked .T-shirt-cards .stars .rate{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: left;
+    color: var(--dark-color);
+
+}
+.single-product .also-liked .T-shirt-cards .big{
+    width: 100%;
+    height: auto;
+    top: 1991px;
+    left: 1045px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.single-product .also-liked .T-shirt-cards h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+
+}
+/* footer */
+footer .gray-box{
+    width:1440px;
+    height: 499px;
+    background: var(--gray-color);
+    z-index: -1;
+    font-family:"Barlow Condensed", sans-serif;
+
+}
+footer .gray-box ul{
+    list-style: none;
+}
+footer .black-box{
+    z-index: 1;
+    background: var(--black-color);
+    width: 1240px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: -80px;
+    border-radius: 20px;
+}
+footer .black-box h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    width: 551px;
+    height: 94px;
+    color: var(--light-color);
+    margin-left: -30px;
+}
+footer .black-box .email-subscribe{
+
+    gap: 14px;
+    display: grid;
+    justify-content: center;
+}
+footer .black-box .email-subscribe input, footer .black-box .email-subscribe button{
+    width: 349px;
+    height: 48px;
+    padding: 12px 16px;
+    gap: 12px;
+    border-radius: 62px;
+    border: none;
+    background: var(--light-color);
+}
+footer .black-box .email-subscribe input{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+}
+footer .black-box .email-subscribe button{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: center;
+
+}
+footer .gray-box .footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1240px;
+    height: 177px;
+    top: 2707px;
+    left: 100px;
+    margin-top: -30px;
+
+
+}
+footer .gray-box .footer-content .left-footer{
+    width: 248px;
+    height: 177px;
+    gap: 35px;
+}
+footer .gray-box .footer-content .left-footer .same-title{
+    font-family: "Oswald",sans-serif;
+    font-size: 33.45px;
+    font-weight: 700;
+    line-height: 40.15px;
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+footer .gray-box .footer-content .left-footer .social-media{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 0 -40px;
+}
+footer .gray-box .footer-content .right-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+footer .gray-box .footer-content .right-footer .cat-title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+footer .gray-box .footer-content .right-footer .cat, footer .gray-box .footer-content .left-footer p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+footer .gray-box .footer-of-footer{
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .gray-box .footer-of-footer h2{
+    width: 269px;
+    height: 19px;
+    top: 2959px;
+    left: 100px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: right;
+    margin: 30px 0 0 35px;
+}
+footer .gray-box .footer-of-footer .pay{
+    display: flex;
+    width: 281.07px;
+    height: 30.03px;
+    top: 2954px;
+    left: 1059px;
+    gap: 7px;
+}
+footer .line{
+    width: 1240px;
+    top: 2934px;
+    left: 100px;
+    gap: 0px;
+    border: 1px solid #c7c7c7;
+    margin: auto;
+}
+/*responsive version*/
+@media(max-width: 390px){
+    body{
+        width: 390px;
+    }
+header{
+        width: 390px;
+    }
+    header .bar{
+        width: 390px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+    }
+    header .bar h2, header .bar a{
+        font-family:"Barlow Condensed", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.2px;
+    }
+    header .bar img{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+    
+    header .mobile-nav{
+        width: 390px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    header .mobile-nav .menu-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    header .mobile-nav .menu-logo img{
+        width: 18.75px;
+        height: 14.25px;
+        margin-top: 5px;
+    }
+    header .mobile-nav .menu-logo .logo{
+        font-family:"Barlow Condensed", sans-serif;
+        font-size: 25.2px;
+        line-height: 30.24px;
+        margin-left: 5px;
+    }
+    header .mobile-nav .rest ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+    }
+    header .mobile-nav .rest ul img{
+        width: 18px;
+        height: 18px;
+    }
+    .large-line{
+        width: 358px;
+        margin-top: 30px;
+    }
+    section{
+        width: 390px;
+        margin-top: 100px;
+    }  
+    .single-product .arrows{
+        margin-left:2px;
+        width: 215px;
+        height: 19px;
+        gap: 6px;
+        margin-left: -30px;
+    
+    }
+    section .customers .customers-cards .customer .star{
+        font-size: 18px;
+        margin:0;
+    }
+    .single-product .arrows li{
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--dark-color);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+    }
+    .single-product .hero-sec{
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 16px;
+    }
+    .single-product .hero-sec .left{
+        width: 390px;
+        height: auto;
+        display: flex;
+        flex-direction:column-reverse;
+        gap: 10px;
+        margin: auto;
+        padding: 5px 5px;
+    }
+    .single-product .hero-sec .left .left-left{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .single-product .hero-sec .left .left-right img{
+        width: 358px;
+        height: 290px;
+        
+    }
+    .single-product .hero-sec .left .left-left img{
+        width: 111px;
+        height: 106px;
+    }
+    .single-product .hero-sec .right{
+        width: 358px;
+        height: auto;
+    }
+    .single-product .hero-sec .right .rating .title{
+        width: 267px;
+        height: 56px;
+        font-size: 24px;
+
+    }
+    .single-product .hero-sec .right .rating .stars{
+        width: 154px;
+        height: 19px;
+        gap: 7px;
+    }
+    .single-product .hero-sec .right .rating .stars .star{
+        width: 18.67px;
+        height: 18.67px        
+    }
+    .single-product .hero-sec .right .rating .stars .frac{
+        width: 33px;
+        height: 19px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.9px;
+        text-align: left;
+    }
+    .single-product .hero-sec .right .rating h1, .also-liked .T-shirt-card h1{
+        width: 205px;
+        height: 32px;
+        gap: 10px;
+
+    }
+    .single-product .hero-sec .right .rating h1 .instead, .also-liked .T-shirt-card .instead{
+        text-decoration: line-through;
+        color: #c7c7c7;
+        margin: 0 0 0 5px;
+        font-size: 14px;
+    }
+    .single-product .hero-sec .right .rating h1 .discount, .also-liked .T-shirt-card .discount{
+
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+    .single-product .hero-sec .right .rating p{
+        width: 358px;
+        height: 50px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .line{
+        width: 358px;
+        margin: 0 0 0 -1px;
+        border: 1px solid var(--gray-color);
+    }
+    .single-product .hero-sec .right .sub-title{
+        width: 93px;
+        height: 11px;
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+    .single-product .hero-sec .right ul{
+        list-style: none;
+        display: flex;
+        align-items: center; 
+        width: 143px;
+        height: 37px;
+        gap: 16px;
+        margin: 20px 0 20px -40px;
+    }
+    .single-product .hero-sec .right ul li .dark{
+        background: var(--black-color);
+        color: var(--light-color);
+    }
+    .single-product .hero-sec .right ul li button{
+        width: 74px;
+        height: 39px;
+        padding: 10px 20px;
+        gap: 12px;
+        border-radius: 62px;
+        line-height: 18.9px;
+        font-size: 12px;
+    }
+    .single-product .hero-sec .right .add-subtract{
+        gap: 7px;
+    }
+    .single-product .hero-sec .right .add-subtract button{
+        width: 110px;
+        height: 44px;
+        padding: 12px 16px;
+        border-radius: 62px;
+    }
+    .single-product .hero-sec .right .add-subtract a{
+        width: 236px;
+        height: 44px;
+        padding: 13px 54px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18.9px;
+    }
+    .single-product .wrapper .tabs ul{
+        width: 390px;
+        gap: 10px;
+        margin: 20px 20px 10px -30px;
+    
+    }
+    .single-product .wrapper .tabs .large-line{
+        width: 358px;
+        margin-left: 20px;
+    }
+    .single-product .wrapper .tabs ul li{
+        font-size: 16px;
+    }
+    .single-product .wrapper .all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .single-product .wrapper .all .review h1{
+        width: 109px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .single-product .wrapper .all .review h1 span{
+        width: 20px;
+        height: 10px;
+        font-size: 12px;
+    }
+    .single-product .wrapper .all .settings ul{
+        width: 230px;
+        height: 48px;
+    
+    
+    }
+    .single-product .wrapper .all .settings ul a{
+        font-size: 12px;
+    }
+    .single-product .wrapper .all .settings ul .set{
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    .single-product .wrapper .all .settings ul .img{
+        width: 20px;
+        height: 20px;
+    }
+    .single-product .wrapper .all .settings ul .two{
+        display: none;
+    }
+    .single-product .wrapper .all .settings ul .write{
+        width: 113px;
+        height: 40px;
+        padding: 12px 16px;
+        margin-left: -20px;
+    }
+    .single-product .wrapper .reviews{
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin: 0;
+    }
+    .single-product .wrapper .reviews .user-review{
+        width: 358px;
+        height: 224.19px;
+        padding: 24px;
+    }
+    .single-product .wrapper .reviews .hidden{
+        display: none;
+    }
+    .single-product .wrapper .reviews .user-review p,.single-product .wrapper .reviews .user-review h1{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .single-product .wrapper .reviews .user-review .star{
+        display: flex;
+        justify-content: space-between;
+    }
+    .single-product .wrapper .reviews .user-review .stars{
+        margin: 0 0 0 -40px;
+    }
+    .single-product .wrapper .reviews .user-review ul .name{
+        font-size: 16px;
+    
+    }
+    .single-product .wrapper .load{
+        margin: 20px auto;
+        width: 195px;
+        height: 47px;
+        padding: 14px 50px;
+    }
+    .single-product .wrapper .load a{
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+    .single-product .also-liked{
+        width: 390px;
+        overflow: hidden;
+    }
+    .single-product .also-liked .title{
+        margin-left: 100px;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 72px;
+        font-size: 40px;
+        line-height: 36px;
+
+    }
+    .single-product .also-liked .T-shirt-cards{
+        width: 800px;
+        margin-left: -25px;
+        margin-bottom: 130px;
+        overflow: hidden;
+        gap: 10px;
+    }
+    .single-product .also-liked .T-shirt-cards .T-shirt-card{
+        width: 198px;
+    }
+    .single-product .also-liked .T-shirt-cards .stars{
+        display: flex;
+        margin: 0 0 0 -40px;
+    }
+    .single-product .also-liked .T-shirt-cards .big{
+        width: 100%;
+        height: auto;
+        top: 1991px;
+        left: 1045px;
+        border-radius: 20px;
+        object-fit: cover;
+    
+    }
+    .single-product .also-liked .T-shirt-cards .big img{
+        width: 198px;
+        height: 200.01px;
+        border-radius: 13.42px;
+    }
+    .single-product .also-liked .T-shirt-cards h1{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21.6px;
+    }
+    footer .gray-box{
+        width:390px;
+        height: 864px;
+    
+    }
+    footer .gray-box ul{
+        list-style: none;
+    }
+    footer .black-box{
+        width: 358px;
+        height: 293px;
+        display: flex;
+        flex-direction: column;
+        top: -120px;
+        border-radius: 20px;
+    }
+    footer .black-box h1{
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 38px;
+        text-align: left;
+        width: 297px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+    footer .black-box .email-subscribe{
+        gap: 14px;
+        display: grid;
+        justify-content: center;
+
+    }
+    footer .black-box .email-subscribe input, footer .black-box .email-subscribe button{
+        width: 311px;
+        height: 42px;
+        margin-right: 40px;
+    }
+    footer .black-box .email-subscribe input{
+        font-size: 14px;
+        line-height: 18.5px;
+    }
+    footer .black-box .email-subscribe button{
+        font-size: 14px;
+        line-height: 18.9px; 
+    }
+    footer .gray-box .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 358px;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: -50px;
+        padding: 0 30px 0 0;
+    
+    
+    }
+    footer .gray-box .footer-content .left-footer{
+        width: 248px;
+        height: 146px;
+        gap: 35px;
+    }
+    footer .gray-box .footer-content .left-footer .same-title{
+        font-size: 28.85px;
+        line-height: 34.62px;
+
+    }
+    footer .gray-box .footer-content .left-footer .social-media{
+        margin: 0 0 30px -40px;
+    }
+    footer .gray-box .footer-content .left-footer .social-media img{
+        width: 20px;
+        height: 20px;
+    }
+    footer .gray-box .footer-content .right-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    footer .gray-box .footer-content .right-footer .cat-title{
+        font-size: 14px;
+    }
+    footer .line{
+        width: 358px;
+        border: 1px solid #c7c7c7;
+
+    }
+
+    footer .gray-box .footer-of-footer{
+        width: 1240px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .gray-box .footer-of-footer h2{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.9px;
+        text-align: right;
+        margin: 10px 0 0 30px;
+    }
+    footer .gray-box .footer-of-footer .pay{
+        display: flex;
+        gap: 4px;
+        margin-left: 10px;
+    }
+    footer .gray-box .footer-of-footer .pay{
+        width: 39.96px;
+    height: 25.74px;
+    padding: 8.52px 6.14px 8.22px 5.92px;
+    border-radius: 4.61px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
